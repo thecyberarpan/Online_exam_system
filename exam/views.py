@@ -48,7 +48,7 @@ def adminclick_view(request):
         return HttpResponseRedirect('afterlogin')
     return HttpResponseRedirect('adminlogin')
 
-
+#send the request through the dictionary:  
 @login_required(login_url='adminlogin')
 def admin_dashboard_view(request):
     dict={
